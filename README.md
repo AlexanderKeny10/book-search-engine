@@ -23,11 +23,11 @@ Book Search Engine is a full-stack MERN application with both client and server 
 
 ## Screenshots
 #### Search Books Homepage
-![Screenshots](./client/src/asset/searchbooks-page-ss.png)
+![Screenshots](./client/src/assets/searchbooks-page-ss.png)
 #### Login Window 
-![Screenshots](./client/src/asset/login-page-searchbooks-ss.png)
+![Screenshots](./client/src/assets/login-page-searchbooks-ss.png)
 #### Homepage With Search Results
-![Screenshots](./client/src/asset/searchbooks-ss.png)
+![Screenshots](./client/src/assets/searchedbooks-ss.png)
 
 ## Contact 
 Visit my **[GitHub profile](https://github.com/Aken00/)** to check out this and other projects.

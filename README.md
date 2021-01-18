@@ -8,6 +8,7 @@ Book Search Engine is a full-stack MERN application with both client and server 
 ## Table of Contents
 * [Technologies](#technologies)
 * [Screenshots](#screenshots)
+* [Contact](#contact)
 * [Links](#links)
 
 ## Technologies
@@ -22,7 +23,7 @@ Book Search Engine is a full-stack MERN application with both client and server 
 
 ## Screenshots
 #### Search Books Homepage
-![Screenshots](./client/src/asset/searchbooks-pages-ss.png)
+![Screenshots](./client/src/asset/searchbooks-page-ss.png)
 #### Login Window 
 ![Screenshots](./client/src/asset/login-page-searchbooks-ss.png)
 #### Homepage With Search Results
@@ -33,5 +34,5 @@ Visit my **[GitHub profile](https://github.com/Aken00/)** to check out this and 
 Contact me at **Ajken04@gmail.com** with any questions or if you'd like to collaborate.
 
 ## Links
-- **[GitHub Repo]()**
+- **[GitHub Repo](https://github.com/Aken00/book-search-engine)**
 - **[Heroku Deployment]()**

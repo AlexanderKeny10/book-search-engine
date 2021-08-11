@@ -46,6 +46,7 @@ const SearchBooks = () => {
         image: book.volumeInfo.imageLinks?.thumbnail || '',
       }));
 
+      console.log(bookData)
       setSearchedBooks(bookData);
       setSearchInput('');
     } catch (err) {
@@ -117,7 +118,9 @@ const SearchBooks = () => {
             : 'Search for a book to begin'}
         </h2>
         <CardColumns>
-          {searchedBooks.map((book) => {
+          
+          {console.log(searchedBooks)||
+          searchedBooks.map((book) => {
             return (
               <Card key={book.bookId} border='dark'>
                 {book.image ? (

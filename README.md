@@ -1,9 +1,7 @@
 # book-search-engine
 
-Refactoring search API that uses REST API to use GraphQL Apollo.
-
 ## Description
-Book Search Engine is a full-stack MERN application with both client and server side. It was refactored from using RESTful APIs to be build using GraphQL API along with Apollo Server npm package.
+Book Search Engine is a full-stack MERN application with both client and server side. Built using GraphQL API along with Apollo Server npm package.
 
 ## Table of Contents
 * [Technologies](#technologies)

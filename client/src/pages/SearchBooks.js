@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useMutation } from '@apollo/react-hooks';
 import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
+import Auth from '../utils/auth';
 import { searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 import { SAVE_BOOK }  from '../utils/mutations';
-import { useMutation } from '@apollo/react-hooks';
-import Auth from '../utils/auth';
 
 const SearchBooks = () => {
   // create state for holding returned google api data
@@ -46,7 +46,6 @@ const SearchBooks = () => {
         image: book.volumeInfo.imageLinks?.thumbnail || '',
       }));
 
-      console.log(bookData)
       setSearchedBooks(bookData);
       setSearchInput('');
     } catch (err) {
@@ -69,13 +68,12 @@ const SearchBooks = () => {
     }
 
     try {
-      console.log(bookToSave)
+      console.log('bookToSave:', bookToSave);
 
       const { data } = await saveBook({
-        variables: { bookData: { ...bookToSave } },
+        variables: { bookData: { ...bookToSave } }
       });
-
-      console.log(data)
+      console.log('data:', data)
 
       // if book successfully saves to user's account, save book id to state
       setSavedBookIds([...savedBookIds, bookToSave.bookId]);
@@ -118,9 +116,7 @@ const SearchBooks = () => {
             : 'Search for a book to begin'}
         </h2>
         <CardColumns>
-          
-          {console.log(searchedBooks)||
-          searchedBooks.map((book) => {
+          {searchedBooks.map((book) => {
             return (
               <Card key={book.bookId} border='dark'>
                 {book.image ? (
